@@ -1,0 +1,43 @@
+.people-component {
+  background-color: $light-background;
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  @include mobile {
+    padding-top: 35px!important;  
+    padding-bottom: 40px!important;  
+  }    
+
+  h2 {
+    margin-bottom: 25px;
+  }   
+
+  .people-block {
+    text-align: center;
+    width: 50%;
+
+    @include mobile {
+      width: 100%!important;  
+      display: block !important;
+    }        
+ 
+    .people-image {
+      height: 70px;
+
+        @include mobile {
+          height: 60px;
+        }        
+    } 
+
+    .text {
+      line-height: 1.15;
+      font-size: $small-font-size;
+      padding: 0 30px 20px;
+
+      @include mobile {
+        padding: 0 10px 30px!important; 
+        line-height: 1.33!important; 
+      }            
+    }
+  }
+} 

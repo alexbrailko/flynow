@@ -1,0 +1,82 @@
+/* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
+
+.body {
+  background-color: $background;
+  width: 100%;
+  color: $text-color;
+}
+
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  display: block;
+  margin: 0 auto !important; /* makes it centered */
+  max-width: $width;
+  width: auto !important;
+  width: $width;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+  display: block;
+  margin: 0 auto;
+  max-width: $width;
+}
+
+
+/* -------------------------------------
+    HEADER, FOOTER, MAIN
+------------------------------------- */
+
+.main {
+  background: #ffffff;
+  width: 100%;
+}
+
+.wrapper {
+  padding: 0 52px;
+}
+
+.inner-wrapper {
+  padding: 0 20px;
+}
+ 
+ 
+.header {
+  padding: 25px 0; 
+  width: 100%;
+
+  p {
+    opacity: 0.4;
+    margin-bottom: 0!important;
+ 
+
+  }  
+
+  * {
+    color: $text-color;
+    font-size: $small-font-size;
+  }  
+}
+ 
+.footer {
+  clear: both;
+  width: 100%;
+  padding-top: 40px;
+
+  @include mobile {
+    padding: 40px 20px 60px!important;
+  }    
+
+  p {
+    opacity: 0.4;
+  }  
+
+  * {
+    color: $text-color;
+    font-size: $small-font-size;
+  }
+
+}

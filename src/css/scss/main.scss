@@ -1,0 +1,17 @@
+
+// Main scss styles
+@import 'variables';
+@import 'mixins';
+@import 'global';
+@import 'layout';
+@import 'type';
+@import 'buttons';
+@import 'other';
+@import 'responsive';
+
+@import "components/logo";
+@import "components/message";
+@import "components/people";
+@import "components/how_it_works";
+@import "components/who_we_are";
+@import "components/questions";

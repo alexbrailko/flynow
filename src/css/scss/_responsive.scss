@@ -1,0 +1,41 @@
+/* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+
+table[class=body]{
+  @media only screen and (max-width: $width) {
+
+    // Typo
+    h1 {
+      font-size: 24px!important;
+    }
+
+    h2 {
+      font-size: 22px!important;
+    }
+
+    h3 {
+      font-size: 20px!important;
+    }
+
+    p, ul {
+      margin-bottom: 15px!important;
+    }
+
+    // Spacing
+    .wrapper {
+      padding-left: 20px!important;
+      padding-right: 20px!important;
+    }
+
+    .container {
+      width: 100% !important;
+    }
+
+    // Buttons
+    .btn table,
+    .btn a {
+      width: 100% !important;
+    }
+  }
+}

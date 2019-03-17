@@ -1,0 +1,37 @@
+.questions-component {
+  padding: 20px;
+
+  @include mobile {
+    padding-top: 0!important;
+  }       
+
+  p {
+    font-size: 14px;
+
+    @include mobile {
+      font-size: 13px!important;
+    }       
+  }
+  
+  table {
+    background-color: $light-background;
+    padding: 20px 65px 0;
+
+    @include mobile {
+      padding: 55px 15px 20px !important;
+    }             
+    
+    td {
+      max-width: 310px;
+
+      @include mobile {
+        max-width: 100%!important;
+        width: 100%!important;
+      }             
+
+      span {
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.who-we-are-component {
+  padding-bottom: 25px;
+  padding-top: 10px;
+
+  @include mobile {
+    padding-bottom: 0!important;
+    margin-bottom: -30px!important;
+  }     
+
+  h2 {
+    @include mobile {
+      margin-bottom: 10px!important;
+    }       
+  }
+
+
+  .cont {
+    width: 50%;
+ 
+    @include mobile {
+      width: 100%!important; 
+      display: block!important;
+    }        
+  }  
+
+  p {
+    font-size: $small-font-size;
+  }
+
+  .text {
+    padding-top: 55px;
+    width: 180px;
+
+    @include mobile {
+      text-align: center!important;
+      padding-top: 0!important;
+      padding-bottom: 35px!important;
+    }       
+
+    &.right-padding {
+      padding-right: 15px;
+    }
+  }  
+
+  .images {
+
+  @include mobile {
+    direction: rtl;
+  }        
+
+    td {
+      display: block;
+      width: 100%;
+
+      &.first {
+        @include mobile {
+          display: table-cell!important;
+          //display: inline-block!important;
+          width: 55%!important;
+          padding: 0 5px;
+        }   
+      }
+
+      &.second {
+        @include mobile {
+          //display: inline-block!important;
+          display: table-cell!important;
+          width: 45%!important;
+          padding: 0 5px;
+        }   
+      }
+    
+    }
+    td:first-child {
+      padding-bottom: 5px;
+    }
+  }
+
+  .thin {
+    width: 155px;
+    margin: 0;
+
+    @include mobile {
+      width: 100%!important;
+    }   
+
+  }  
+
+}

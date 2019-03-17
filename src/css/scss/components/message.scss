@@ -1,0 +1,17 @@
+.message-component {
+  padding-bottom: 45px;
+
+  @include mobile {
+    padding-bottom: 25px!important;  
+  }   
+
+  p {
+    line-height: 1.63;
+    color: $text-darker-color;
+  }
+  .btn {
+    padding-top: 5px;
+  }
+} 
+
+ 

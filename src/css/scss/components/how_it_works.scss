@@ -1,0 +1,68 @@
+.how-it-works-component {
+  padding-bottom: 25px;
+
+  @include mobile {
+    margin-top: -20px!important;
+  }   
+
+  h2 {
+    @include mobile {
+      margin-bottom: 10px!important;
+    }       
+  }
+
+  .cont {
+    width: 50%;
+ 
+    @include mobile {
+      width: 100%!important; 
+      display: block!important;
+    }        
+  }
+ 
+  p {
+    font-size: $small-font-size;
+  }
+
+  .text {
+    padding-top: 55px;
+
+    @include mobile {
+      text-align: center!important;
+      padding-top: 35px!important;
+    }       
+
+    &.right-padding {
+      padding-right: 15px;
+    }
+  }
+
+  .images {
+
+    td {
+      display: block;
+      width: 100%;
+
+      &.first {
+        @include mobile {
+          display: table-cell!important;
+          width: 40%!important;
+          padding-right: 10px;
+        }   
+      }
+
+      &.second {
+        @include mobile {
+          display: table-cell!important;
+          width: 60%!important;
+          padding-left: 10px;
+        }   
+      }
+     
+    }
+    td:first-child {
+      padding-bottom: 5px;
+      margin-top: -10px;
+    }
+  }
+}
